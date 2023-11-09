@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=PT+Sans:ital@1&display=swap');
+
+.search,
+input,
+button {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  width: 223px;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+button {
+  padding: 0;
+  border: none;
+  color: blue;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  width: 170px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.mainBody {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 250px;
+
+  .left {
+    display: flex;
+
+    .options {
+      list-style-type: none;
+      padding: 0;
+      max-width: 400px;
+
+      &>li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9px;
+        color: #B1B1B1;
+
+        .black {
+          color: black;
+        }
+
+        &>span {
+          font-weight: 700;
+          margin-left: 3rem;
+        }
+      }
+
+
+
+    }
+
+    .info {
+      margin: 11px 0px 14px 21px;
+    }
+
+    .title {
+      margin: 0;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    &>img {
+      padding: 2px;
+      margin-bottom: 10px;
+    }
+
+    .active {
+      border: 1px solid blue;
+      border-radius: 10%;
+    }
+
+    .notActive {
+      opacity: 40%;
+    }
+  }
+
+
+
+
+  .danger {
+    color: red;
+  }
+}
